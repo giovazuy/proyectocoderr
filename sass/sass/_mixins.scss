@@ -1,0 +1,26 @@
+@mixin button-style($bg, $hover-bg) {
+  background-color: $bg;
+  color: $color-button-text; // Usa la variable de color de texto del botón
+  border: none;
+  padding: 0.7rem 1.5rem; // Más ancho y cómodo
+  font-weight: bold;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: $radius; // Redondeado en todo el botón
+  width: 100%; // Que ocupe todo el ancho de la card
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background-color 0.3s, color 0.2s;
+
+  &:hover, &:focus {
+    background-color: $hover-bg;
+    color: $color-button-text;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

@@ -1,0 +1,28 @@
+// Placeholders for @extend
+
+%card-shared {
+  background-color: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    object-fit: cover;
+    height: 200px;
+  }
+
+  h3, p {
+    padding: 0 1rem;
+  }
+}

@@ -1,69 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>TechPulse - Componentes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS compilado desde SCSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <!-- Fuente principal -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="../index.html">TechPulse</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navContent">
+       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="armapc.html">Arma tu PC</a></li>
-          <li class="nav-item"><a class="nav-link active" href="componentes.html">Componentes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="armapc.html">Arma tu PC</a></li>
+          <li class="nav-item"><a class="nav-link" href="componentes.html">Componentes</a></li>
           <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
+   
     </div>
-  </header>
-
-  <!-- MAIN -->
-  <main class="container my-5">
-    <h2 class="text-center mb-4">Todos los Componentes</h2>
-    <div class="row gy-4">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="border p-3 rounded">
-          <h3>Placas de Video</h3>
-          <p>Variedad de modelos NVIDIA y AMD.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="border p-3 rounded">
-          <h3>Procesadores</h3>
-          <p>Intel y AMD de última generación.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="border p-3 rounded">
-          <h3>Memorias RAM</h3>
-          <p>DDR4 y DDR5 con diversas capacidades.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="border p-3 rounded">
-          <h3>Almacenamiento</h3>
-          <p>SSD NVMe, SATA y discos HDD.</p>
-        </div>
+  </nav>
+  <a class="navbar-brand logo-ofertas" href="../index.html">
+  <span class="logo-main">Tech<span class="logo-red">Pulse</span></span>
+  <span class="logo-hai">hai</span>
+</a>
+ <section class="franja-roja">
+    <h1>Componentes Destacados</h1>
+    <p>¡Encontrá los mejores componentes para tu PC!</p>
+  </section>
+  <!-- Contenido principal -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Componentes Destacados</h1>
+    <div class="row mb-4">
+      <div class="col-md-6 offset-md-3">
+        <input type="text" class="form-control" placeholder="Buscar componentes... (usa Ctrl+F)">
       </div>
     </div>
-  </main>
+    <div class="row g-4">
+      <!-- grafica -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../img/4060.jpeg" class="card-img-top" alt="Tarjeta Gráfica">
+          <div class="card-body">
+            <h5 class="card-title">Tarjeta Gráfica RTX 4060</h5>
+            <p class="card-text">8GB GDDR6, ideal para gaming y diseño.</p>
+            <div class="card-price mb-2">$450</div>
+            <button class="btn btn-comprar w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- prose -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../img/ryzen7.jpeg" class="card-img-top" alt="Procesador Ryzen">
+          <div class="card-body">
+            <h5 class="card-title">AMD Ryzen 7 5800X</h5>
+            <p class="card-text">8 núcleos, 16 hilos, excelente rendimiento.</p>
+            <div class="card-price mb-2">$320</div>
+            <button class="btn btn-comprar w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!--Ram -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../img/ram.jpeg" class="card-img-top" alt="Memoria RAM">
+          <div class="card-body">
+            <h5 class="card-title">Memoria RAM 16GB DDR4</h5>
+            <p class="card-text">3200MHz, ideal para multitarea.</p>
+            <div class="card-price mb-2">$70</div>
+            <button class="btn btn-comprar w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- ssd -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../img/ssd.jpeg" class="card-img-top" alt="Disco SSD">
+          <div class="card-body">
+            <h5 class="card-title">SSD NVMe 1TB</h5>
+            <p class="card-text">Lectura ultra rápida, ideal para gaming.</p>
+            <div class="card-price mb-2">$110</div>
+            <button class="btn btn-comprar w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../img/msi.jpeg" class="card-img-top" alt="Placa Madre">
+          <div class="card-body">
+            <h5 class="card-title">Placa Madre B550</h5>
+            <p class="card-text">Compatibilidad con Ryzen, PCIe 4.0.</p>
+            <div class="card-price mb-2">$150</div>
+            <button class="btn btn-comprar w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../img/fuente.jpeg" class="card-img-top" alt="Fuente de Poder">
+          <div class="card-body">
+            <h5 class="card-title">Fuente 650W 80+ Bronze</h5>
+            <p class="card-text">Alta eficiencia y protección.</p>
+            <div class="card-price mb-2">$60</div>
+            <button class="btn btn-comprar w-100">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Puedes agregar más productos aquí -->
+    </div>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="bg-light text-center py-4 mt-5">
-    <p>© 2025 TechPulse. Todos los derechos reservados.</p>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 TechPulse. Todos los derechos reservados.
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

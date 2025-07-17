@@ -1,0 +1,46 @@
+// General variables
+$theme: light;
+
+// Colores principales
+$color-light-bg: #f9f9f9;
+$color-dark-bg: #111;
+$color-text-light: #fff;
+$color-text-dark: #111;
+$color-card-bg: #fff;
+$color-card-shadow: 0 2px 8px rgba(0,0,0,0.08); // NUEVO
+$color-border: #ccc;
+$color-price: #28a745; // Mejor verde para precios
+$color-discount: #888;
+$color-button: #ff3333; // Rojo más vivo
+$color-button-hover: #d90000; // Rojo oscuro para hover
+$color-button-text: #fff; // NUEVO
+$color-navbar-bg: #222; // NUEVO
+$color-navbar-link: #fff; // NUEVO
+$color-navbar-link-hover: #ff3333; // NUEVO
+$color-footer-bg: #000;
+$color-footer-box: rgba(255,255,255,0.1);
+
+// Links
+$color-link: #007bff; // NUEVO
+$color-link-hover: #0056b3; // NUEVO
+
+// Bordes y espaciados
+$radius: 0.5rem;
+$padding-base: 2rem;
+$card-padding: 1.5rem; // NUEVO
+$card-gap: 2rem; // NUEVO
+
+// Tipografía
+$font-main: 'Montserrat', 'Open Sans', Arial, sans-serif; // Mejorada
+$font-size-base: 1rem; // NUEVO
+$font-size-title: 1.3rem; // NUEVO
+$font-size-price: 1.1rem; // NUEVO
+
+// Breakpoints
+$bp-lg: 900px;
+$bp-md: 700px; // NUEVO
+$bp-sm: 480px; // NUEVO
+
+// Z-index
+$z-navbar: 1000; // NUEVO
+$z-dropdown: 1100; // NUEVO

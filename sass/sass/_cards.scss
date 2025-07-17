@@ -1,0 +1,70 @@
+.card-auto {
+  @extend %card-shared;
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  box-shadow: $color-card-shadow;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $color-text-dark;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    color: $color-discount;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.card-auto-precio {
+  font-weight: bold;
+  color: $color-price;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+
+  span {
+    color: $color-discount;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+    font-weight: normal;
+    font-size: 0.95em;
+  }
+}
+
+.card-auto-btn {
+  @include button-style($color-button, $color-button-hover);
+  color: $color-button-text;
+  border-radius: $radius;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.card-auto-btn, .btn-comprar {
+  background: $color-button;
+  color: $color-text-light;
+  border: none;
+  border-radius: $radius;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+
+  &:hover {
+    background: $color-button-hover;
+    color: $color-text-light;
+  }
+}

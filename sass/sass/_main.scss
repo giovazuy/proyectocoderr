@@ -1,0 +1,186 @@
+main {
+  padding: $padding-base 1rem;
+}
+
+.ultimos-modelos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.franja-roja {
+  background: $color-button; // Rojo principal
+  color: $color-text-light;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+}
+.armapc-hero {
+  background: $color-button;
+  color: $color-text-light;
+  padding: 2.5rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+.armapc-form {
+  max-width: 700px;
+  background: $color-card-bg;
+  border-radius: $radius;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+
+  label {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: $color-text-dark;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-select {
+    font-size: 1.05rem;
+    border-radius: $radius;
+    border: 1.5px solid $color-border;
+    background: #fafafa;
+    margin-bottom: 1.2rem;
+    transition: border 0.2s;
+
+    &:focus {
+      border: 1.5px solid $color-button;
+      outline: none;
+    }
+  }
+
+  .btn-armar {
+    background: $color-button;
+    color: $color-text-light;
+    border: none;
+    border-radius: $radius;
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background 0.2s;
+
+    &:hover {
+      background: $color-button-hover;
+      color: $color-text-light;
+    }
+  }
+}
+.contacto-section {
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  background: $color-card-bg;
+  border-radius: $radius;
+  box-shadow: 0 4px 16px rgba(255,51,51,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+
+  h2 {
+    color: $color-button;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+  }
+
+  p {
+    color: $color-text-dark;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: $color-text-dark;
+    text-align: left;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid $color-border;
+    border-radius: $radius;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: border 0.2s, box-shadow 0.2s;
+
+    &:focus {
+      border: 1.5px solid $color-button;
+      box-shadow: 0 0 0 2px rgba(255,51,51,0.08);
+      outline: none;
+    }
+  }
+
+  textarea {
+    min-height: 90px;
+    resize: vertical;
+  }
+
+  .btn-enviar {
+    background: $color-button;
+    color: $color-text-light;
+    border: none;
+    border-radius: $radius;
+    font-weight: 700;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 8px rgba(255,51,51,0.10);
+    transition: background 0.2s, transform 0.2s;
+
+    &:hover {
+      background: $color-button-hover;
+      color: $color-text-light;
+      transform: scale(1.04);
+    }
+  }
+}
+.contacto-hero {
+  background: $color-button;
+  color: $color-text-light;
+  padding: 2.5rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}

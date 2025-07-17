@@ -1,0 +1,42 @@
+* {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Theme conditional
+body {
+  @if $theme == light {
+    background-color: $color-light-bg;
+    color: $color-text-dark;
+  } @else {
+    background-color: $color-dark-bg;
+    color: $color-text-light;
+  }
+  line-height: 1.6; // Mejor legibilidad
+  font-size: $font-size-base; // Usa tu variable de tamaño base
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: $radius; // Opcional: suaviza imágenes
+}
+
+// Enlaces generales
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+body {
+  font-family: $font-main;
+  background: $color-light-bg;
+  color: $color-text-dark;
+}

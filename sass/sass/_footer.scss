@@ -1,0 +1,43 @@
+footer {
+  background-color: $color-footer-bg;
+  color: $color-text-light; // Asegura texto claro
+  padding: $padding-base 1rem;
+  margin-top: 2rem; // Para separar del contenido
+
+  .footer-container-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: $bp-lg) {
+  .footer-container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+   
+  .footer-container-primerHijo,
+  .footer-container-segundoHijo,
+  .footer-container-tercerHijo {
+    background-color: $color-footer-box;
+    padding: 1rem;
+    color: $color-text-light;
+    border-radius: $radius; // Para suavizar las cajas
+  }
+
+  .footerDerechos {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}
+
+footer {
+  background: $color-footer-bg;
+  color: $color-text-light;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 1em;
+}

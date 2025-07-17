@@ -1,62 +1,3 @@
-/* Estilos generales */
-* {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f9f9f9;
-  color: #111;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* HEADER con imagen de fondo y capa oscura */
-.header-principal {
-  background-image: url('../img/headerBackground.webp');
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  position: relative;
-  text-align: center;
-  padding: 2rem;
-}
-
-.oscurecer-fondo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.header-principal .z-1 {
-  position: relative;
-  z-index: 1;
-}
-
-/* MAIN */
-main {
-  padding: 2rem 1rem;
-}
-
-/* Productos en grilla responsiva */
-.ultimos-modelos-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-/* Card de producto */
 .card-auto {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -68,98 +9,612 @@ main {
   justify-content: space-between;
   transition: transform 0.3s ease;
 }
-
 .card-auto:hover {
   transform: translateY(-5px);
 }
-
-.card-auto h3,
-.card-auto p {
-  padding: 0 1rem;
-}
-
 .card-auto img {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   object-fit: cover;
   height: 200px;
 }
-
-/* Precio */
-.card-auto-precio {
-  font-weight: bold;
-  color: green;
+.card-auto h3, .card-auto p {
   padding: 0 1rem;
 }
 
+* {
+  font-family: "Montserrat", "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #111;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #0056b3;
+}
+
+body {
+  font-family: "Montserrat", "Open Sans", Arial, sans-serif;
+  background: #f9f9f9;
+  color: #111;
+}
+
+.header-principal {
+  background-image: url("../img/headerBackground.webp");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-principal .oscurecer-fondo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.header-principal .z-1 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+.header-principal .z-1 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.header-principal .z-1 p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.header-principal .z-1 .btn {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  background: #ff3333;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.header-principal .z-1 .btn:hover {
+  background: #d90000;
+}
+
+.navbar-brand {
+  color: #ff3333 !important;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-contacto {
+  background: #fff;
+  padding: 1.2rem 0 1.2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.navbar-contacto .navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.navbar-contacto .navbar-logo {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #ff3333;
+  text-decoration: none;
+}
+.navbar-contacto .navbar-logo span {
+  color: #222;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-left: 0.2em;
+}
+.navbar-contacto .navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+.navbar-contacto .navbar-links a {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+.navbar-contacto .navbar-links a.active, .navbar-contacto .navbar-links a:hover {
+  color: #ff3333;
+  font-weight: 700;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+.ultimos-modelos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.franja-roja {
+  background: #ff3333;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+.franja-roja h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.franja-roja p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.armapc-hero {
+  background: #ff3333;
+  color: #fff;
+  padding: 2.5rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.armapc-hero h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-bottom: 0.5rem;
+}
+.armapc-hero p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.armapc-form {
+  max-width: 700px;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+}
+.armapc-form label {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.armapc-form .form-select {
+  font-size: 1.05rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #ccc;
+  background: #fafafa;
+  margin-bottom: 1.2rem;
+  transition: border 0.2s;
+}
+.armapc-form .form-select:focus {
+  border: 1.5px solid #ff3333;
+  outline: none;
+}
+.armapc-form .btn-armar {
+  background: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.armapc-form .btn-armar:hover {
+  background: #d90000;
+  color: #fff;
+}
+
+.contacto-section {
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(255, 51, 51, 0.1);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+}
+.contacto-section h2 {
+  color: #ff3333;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.contacto-section p {
+  color: #111;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+.contacto-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto-section label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #111;
+  text-align: left;
+}
+.contacto-section input, .contacto-section textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.contacto-section input:focus, .contacto-section textarea:focus {
+  border: 1.5px solid #ff3333;
+  box-shadow: 0 0 0 2px rgba(255, 51, 51, 0.08);
+  outline: none;
+}
+.contacto-section textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.contacto-section .btn-enviar {
+  background: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(255, 51, 51, 0.1);
+  transition: background 0.2s, transform 0.2s;
+}
+.contacto-section .btn-enviar:hover {
+  background: #d90000;
+  color: #fff;
+  transform: scale(1.04);
+}
+
+.contacto-hero {
+  background: #ff3333;
+  color: #fff;
+  padding: 2.5rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.contacto-hero h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-bottom: 0.5rem;
+}
+.contacto-hero p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.card-auto {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.card-auto .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card-auto .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.card-auto .card-text {
+  color: #888;
+  font-size: 1em;
+  margin-bottom: 0.5rem;
+}
+
+.card-auto-precio {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
 .card-auto-precio span {
   color: #888;
   text-decoration: line-through;
   margin-left: 0.5rem;
+  font-weight: normal;
+  font-size: 0.95em;
 }
 
-/* Botón de compra */
 .card-auto-btn {
-  background-color: red;
-  color: white;
+  background-color: #ff3333;
+  color: #fff;
   border: none;
-  padding: 0.7rem;
+  padding: 0.7rem 1.5rem;
   font-weight: bold;
+  font-size: 1.05rem;
   text-transform: uppercase;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 0.5rem;
+  width: 100%;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s, color 0.2s;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.card-auto-btn:hover, .card-auto-btn:focus {
+  background-color: #d90000;
+  color: #fff;
 }
 
-.card-auto-btn:hover {
-  background-color: darkred;
+.card-auto-btn, .btn-comprar {
+  background: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.card-auto-btn:hover, .btn-comprar:hover {
+  background: #d90000;
+  color: #fff;
 }
 
-/* FOOTER con Grid */
 footer {
   background-color: #000;
+  color: #fff;
   padding: 2rem 1rem;
+  margin-top: 2rem;
 }
-
-.footer-container-grid {
+footer .footer-container-grid {
   display: grid;
   gap: 1rem;
 }
-
-.footer-container-primerHijo,
-.footer-container-segundoHijo,
-.footer-container-tercerHijo {
+@media screen and (min-width: 900px) {
+  footer .footer-container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+footer .footer-container-primerHijo,
+footer .footer-container-segundoHijo,
+footer .footer-container-tercerHijo {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1rem;
-  color: white;
+  color: #fff;
+  border-radius: 0.5rem;
 }
-
-.footerDerechos {
+footer .footerDerechos {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 500;
+  margin-top: 1rem;
 }
 
-/* Responsive */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 1em;
+}
+
 @media screen and (min-width: 900px) {
-  .ultimos-modelos-container {
-    justify-content: center;
+  .footer-container-column-1 {
+    grid-column: 1/span 1;
   }
-
-  .footer-container-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .footer-container-column-2 {
+    grid-column: 2/span 1;
   }
-
-  .footer-container-primerHijo {
-    grid-column: 1 / 3;
+  .footer-container-column-3 {
+    grid-column: 3/span 1;
   }
-
-  .footer-container-segundoHijo {
-    grid-column: 3 / 4;
+  .light-small {
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
   }
-
-  .footer-container-tercerHijo {
-    grid-column: 1 / 4;
+  .light-medium {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .light-large {
+    background-color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .dark-small {
+    background-color: #111;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .dark-medium {
+    background-color: #111;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .dark-large {
+    background-color: #111;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
   }
 }
+.ofertas-hero-2 {
+  background: #ff3333;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+.ofertas-hero-2 h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.ofertas-hero-2 p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.ofertas-grid {
+  padding: 2rem 0;
+}
+.ofertas-grid h2 {
+  color: #ff3333;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.oferta-card-2 {
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1rem 1.2rem 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.oferta-card-2:hover {
+  box-shadow: 0 6px 18px rgba(255, 51, 51, 0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.oferta-card-2 .oferta-img-wrap {
+  position: relative;
+  background: #fafafa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.oferta-card-2 .oferta-img-wrap img {
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.5rem;
+  background: #fafafa;
+  padding: 0.5rem;
+}
+.oferta-card-2 .oferta-img-wrap .oferta-badge-2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff3333;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 1em;
+  padding: 0.2em 0.8em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.oferta-card-2 .oferta-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.oferta-card-2 .oferta-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #111;
+}
+.oferta-card-2 .oferta-info .oferta-precios {
+  margin-bottom: 1rem;
+}
+.oferta-card-2 .oferta-info .oferta-precios .precio-tachado {
+  color: #888;
+  text-decoration: line-through;
+  margin-right: 0.7rem;
+  font-size: 1.05rem;
+}
+.oferta-card-2 .oferta-info .oferta-precios .precio-oferta {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.oferta-card-2 .oferta-info .btn-comprar-2 {
+  background: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.oferta-card-2 .oferta-info .btn-comprar-2:hover {
+  background: #d90000;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
