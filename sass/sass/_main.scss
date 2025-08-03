@@ -184,3 +184,94 @@ main {
     margin-bottom: 0;
   }
 }
+/* --- VARIABLES DE DISEÑO --- */
+$color-rojo-principal: #e53935;
+$color-oscuro-nav:     #212529;
+$color-fondo-cuerpo:   #f7f7f9;
+$color-blanco:         #fff;
+$color-texto-gris:     #6c757d;
+$font-principal: 'Montserrat', sans-serif;
+
+/* --- ESTILOS GLOBALES --- */
+body {
+  font-family: $font-principal;
+  background-color: $color-fondo-cuerpo;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- ESTILOS DEL NAVBAR --- */
+.navbar-brand {
+  color: $color-rojo-principal !important;
+}
+.navbar .nav-link.active {
+  color: $color-rojo-principal !important;
+  font-weight: 700;
+}
+
+/* --- HERO ROJO (Banner superior) --- */
+.hero-rojo {
+  background-color: $color-rojo-principal;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* --- TÍTULO DE SECCIÓN (NUEVO) --- */
+// Esta es la clase clave para replicar el título de "Ofertas Destacadas"
+.section-title {
+  color: $color-rojo-principal;
+  font-weight: 700;
+  font-size: 2.5rem; // Tamaño grande y llamativo
+  margin-bottom: 0; // El espaciado lo maneja la sección
+}
+
+
+/* --- SECCIÓN Y CONTENEDOR DEL FORMULARIO --- */
+.contacto-form-section {
+  flex-grow: 1;
+}
+
+// La "tarjeta" que contiene el formulario
+.form-container {
+  background-color: $color-blanco;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  border: 1px solid #eee; // Un borde sutil como en las tarjetas de oferta
+}
+
+/* --- ESTILOS DEL FORMULARIO --- */
+.form-label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.form-control {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  &:focus {
+    border-color: $color-rojo-principal;
+    box-shadow: 0 0 0 0.25rem rgba($color-rojo-principal, 0.25);
+  }
+}
+.btn-rojo {
+  background-color: $color-rojo-principal;
+  border-color: $color-rojo-principal;
+  color: $color-blanco;
+  padding: 0.8rem;
+  font-size: 1.1rem; // Un poco más grande para que se destaque
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: darken($color-rojo-principal, 10%);
+    border-color: darken($color-rojo-principal, 10%);
+    color: $color-blanco;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+}
+
+/* --- ESTILOS DEL FOOTER --- */
+footer {
+    background-color: $color-oscuro-nav;
+}

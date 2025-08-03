@@ -3,54 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - PCMaster Store</title>
+  <title>Contacto - TechPulse</title>
+  <meta name="description" content="¿Tienes dudas o consultas sobre nuestros componentes de PC? Ponte en contacto con el equipo de TechPulse. Te responderemos a la brevedad." />
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Tu CSS personalizado (compilado desde SCSS) -->
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <!-- NAVBAR MODERNO -->
- <nav class="navbar-contacto">
-  <div class="navbar-container">
-    <a class="navbar-logo" href="../index.html">TechPulse </a>
-    <div class="navbar-links">
-      <a href="../index.html">Inicio</a>
-      <a href="Componentes.html">Componentes</a>
-      <a href="OFERTAS.html">OFERTAS</a>
-      <a href="Contacto.html" class="active">Contacto</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">TechPulse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="Componentes.html">Componentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="OFERTAS.html">OFERTAS</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-
-  <!-- HERO DE CONTACTO -->
-  <section class="contacto-hero">
+  <!-- HERO ROJO (Banner superior) -->
+  <section class="hero-rojo text-white text-center py-4">
+    <div class="container">
+      <p class="lead mb-0">Estamos aquí para ayudarte. ¡Escribinos!</p>
+    </div>
+  </section>
+  
+  <!-- TÍTULO PRINCIPAL DE LA PÁGINA (Como en la página de Ofertas) -->
+  <section class="page-title-section pt-5">
     <div class="container text-center">
-      <h1>Contacto</h1>
-      <p>¿Tenés dudas o consultas? Escribinos y te responderemos a la brevedad.</p>
+      <h1 class="section-title">Contacto</h1>
     </div>
   </section>
 
-  <!-- FORMULARIO DE CONTACTO -->
-  <section class="contacto-section">
-    <form>
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required />
+  <!-- SECCIÓN DEL FORMULARIO -->
+  <section class="contacto-form-section pt-4 pb-5">
+    <div class="container">
+      <!-- Contenedor del formulario que simula una tarjeta de producto -->
+      <div class="form-container mx-auto">
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" required />
+          <div class="mb-4">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required />
+          </div>
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
+          <div class="mb-4">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta aquí..." required></textarea>
+          </div>
 
-      <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
+          <button type="submit" class="btn btn-rojo w-100 fw-bold">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2025 PCMaster. Todos los derechos reservados.</p>
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+        <p class="mb-0">© 2025 TechPulse. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

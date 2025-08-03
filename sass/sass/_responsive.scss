@@ -1,12 +1,12 @@
 @media screen and (min-width: $bp-lg) {
-  // Example: generate footer columns using @for
+
   @for $i from 1 through 3 {
     .footer-container-column-#{$i} {
       grid-column: $i / span 1;
     }
   }
 
-  // Example: generate theme-size classes using @each
+
   $themes: light, dark;
   $sizes: small, medium, large;
 
